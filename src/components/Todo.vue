@@ -1,10 +1,10 @@
 <template>
   <div 
-    class="flex justify-between items-center py-2 px-2" 
-    :class="{ 'bg-green-600':this.todo.done, 'bg-red-600': !todo.todo.done }"
+    class="flex justify-between items-center py-3 px-8" 
+    :class="{ 'bg-green-100':this.todo.done, 'bg-red-100': !todo.todo.done }"
   >
     <h1 class="cursor-pointer" @click="toggleTodo">{{ todo.todo }}</h1>
-    <button class="bg-black py-1 px-2 rounded" @click="removeTodo">Delete Todo</button>
+    <button class="text-white bg-red-500 py-1 px-2 rounded-md" @click="removeTodo">Delete Todo</button>
   </div>
 </template>
 
